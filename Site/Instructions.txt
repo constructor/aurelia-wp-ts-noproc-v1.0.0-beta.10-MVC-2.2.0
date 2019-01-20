@@ -27,3 +27,33 @@ See git commit for exact details of changes.
 
 ===========================
 
+Using this template.
+
+Create a Visual Studio MVC project in the usual way.
+Paste this inside the project folder (same location as the .csproj)
+'yarn unstall'
+Build in Visual Studio
+Create a new controller and view (to hold the Aurelia app).
+
+In the view, paste the following:
+
+@{
+  Layout = "~/Views/Shared/_Layout_App.cshtml";
+  ViewData["Title"] = "Home Page";
+}
+
+<div aurelia-app="main">Loading...</div>
+
+@section scripts {
+
+}
+
+@section css {
+  <environment names="Production">
+    <link asp-href-include="~/dist/*.css" rel="stylesheet" asp-append-version="true" />
+  </environment>
+}
+
+===========================
+
+CTRL F5 and browse to the controller you created to see the Aurelia app.
