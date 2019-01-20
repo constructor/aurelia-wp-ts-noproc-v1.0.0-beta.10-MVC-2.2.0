@@ -1,0 +1,29 @@
+au new --here
+
+1 Webpack
+1 HTTP/1.1
+1 Web (Default)
+2 Typescript
+1 No markup processing
+1 No css processing
+1 No testing
+1 No integration testing
+5 No editor options
+1 Yes - Create the project structure...
+1 Yes - Use Yarn
+
+===========================
+
+After generation of Aurelia project make these changes. 
+
+In the webpack.config file:
+
+Change the 'outDir' to 'wwwroot/dist'
+Change the 'baseUrl' to '/dist/'
+Add plugin entry for _Layout_App.cshtml.ejs
+Add '_Layout_App.cshtml.ejs' file to folder
+
+See git commit for exact details of changes.
+
+===========================
+
