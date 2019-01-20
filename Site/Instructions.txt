@@ -56,4 +56,11 @@ In the view, paste the following:
 
 ===========================
 
+Ensure everything packages are installed with: 'yarn install'
 CTRL F5 and browse to the controller you created to see the Aurelia app.
+
+===========================
+
+Added site.css in styles folder.
+'au build --watch'
+Change background colour in stylesheet and see changes instantly in browser when you refresh. 
